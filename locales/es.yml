@@ -69,3 +69,8 @@ tools:
     measurement: Measurement
     text: Text
     data: Data
+    spider: Spider
+
+  curl-to-code:
+    title: Crul to Code
+    description: Convert curl commands to Python, JavaScript and more

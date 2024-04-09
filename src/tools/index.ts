@@ -1,6 +1,13 @@
+/*
+ * @Author: 胖胖很瘦
+ * @Date: 2024-03-01 11:36:26
+ * @LastEditors: 胖胖很瘦
+ * @LastEditTime: 2024-04-09 18:00:12
+ */
 import { tool as base64FileConverter } from './base64-file-converter';
 import { tool as base64StringConverter } from './base64-string-converter';
 import { tool as basicAuthGenerator } from './basic-auth-generator';
+import { tool as curlToCode } from './curl-to-code';
 import { tool as textToUnicode } from './text-to-unicode';
 import { tool as pdfSignatureChecker } from './pdf-signature-checker';
 import { tool as numeronymGenerator } from './numeronym-generator';
@@ -37,7 +44,7 @@ import { tool as textToNatoAlphabet } from './text-to-nato-alphabet';
 import { tool as slugifyString } from './slugify-string';
 import { tool as keycodeInfo } from './keycode-info';
 import { tool as jsonMinify } from './json-minify';
-import { tool as bcrypt } from './bcrypt';
+// import { tool as bcrypt } from './bcrypt';
 import { tool as bip39 } from './bip39-generator';
 import { tool as caseConverter } from './case-converter';
 import { tool as chmodCalculator } from './chmod-calculator';
@@ -80,8 +87,13 @@ import { tool as yamlViewer } from './yaml-viewer';
 
 export const toolsByCategory: ToolCategory[] = [
   {
+    name: 'Spider',
+    components: [curlToCode],
+  },
+  {
     name: 'Crypto',
-    components: [tokenGenerator, hashText, bcrypt, uuidGenerator, ulidGenerator, cypher, bip39, hmacGenerator, rsaKeyPairGenerator, passwordStrengthAnalyser, pdfSignatureChecker],
+    // components: [tokenGenerator, hashText, bcrypt, uuidGenerator, ulidGenerator, cypher, bip39, hmacGenerator, rsaKeyPairGenerator, passwordStrengthAnalyser, pdfSignatureChecker],
+    components: [tokenGenerator, hashText, uuidGenerator, ulidGenerator, cypher, bip39, hmacGenerator, rsaKeyPairGenerator, passwordStrengthAnalyser, pdfSignatureChecker],
   },
   {
     name: 'Converter',

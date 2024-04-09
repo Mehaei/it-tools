@@ -1,3 +1,9 @@
+/*
+ * @Author: 胖胖很瘦
+ * @Date: 2024-03-01 11:36:26
+ * @LastEditors: 胖胖很瘦
+ * @LastEditTime: 2024-04-09 18:04:44
+ */
 /* eslint-disable */
 /* prettier-ignore */
 // @ts-nocheck
@@ -63,6 +69,7 @@ declare module '@vue/runtime-core' {
     'CTextCopyable.demo': typeof import('./src/ui/c-text-copyable/c-text-copyable.demo.vue')['default']
     CTooltip: typeof import('./src/ui/c-tooltip/c-tooltip.vue')['default']
     'CTooltip.demo': typeof import('./src/ui/c-tooltip/c-tooltip.demo.vue')['default']
+    CurlToCode: typeof import('./src/tools/curl-to-code/curl-to-code.vue')['default']
     DateTimeConverter: typeof import('./src/tools/date-time-converter/date-time-converter.vue')['default']
     'DemoHome.page': typeof import('./src/ui/demo/demo-home.page.vue')['default']
     DemoWrapper: typeof import('./src/ui/demo/demo-wrapper.vue')['default']
@@ -185,6 +192,7 @@ declare module '@vue/runtime-core' {
     RsaKeyPairGenerator: typeof import('./src/tools/rsa-key-pair-generator/rsa-key-pair-generator.vue')['default']
     SlugifyString: typeof import('./src/tools/slugify-string/slugify-string.vue')['default']
     SpanCopyable: typeof import('./src/components/SpanCopyable.vue')['default']
+    Spider: typeof import('./src/tools/Spider/Spider.vue')['default']
     SqlPrettify: typeof import('./src/tools/sql-prettify/sql-prettify.vue')['default']
     StringObfuscator: typeof import('./src/tools/string-obfuscator/string-obfuscator.vue')['default']
     SvgPlaceholderGenerator: typeof import('./src/tools/svg-placeholder-generator/svg-placeholder-generator.vue')['default']

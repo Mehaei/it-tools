@@ -69,6 +69,7 @@ tools:
     measurement: Đo lường
     text: Văn bản
     data: Dữ liệu
+    spider: Spider
 
   password-strength-analyser:
     title: Bộ phân tích độ mạnh mật khẩu
@@ -104,6 +105,10 @@ tools:
   json-to-csv:
     title: Chuyển đổi JSON thành CSV
     description: Chuyển đổi JSON thành CSV với việc tự động phát hiện tiêu đề.
+
+  curl-to-code:
+    title: Crul to Code
+    description: Convert curl commands to Python, JavaScript and more
 
   camera-recorder:
     title: Ghi lại camera

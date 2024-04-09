@@ -69,3 +69,7 @@ tools:
     measurement: 'Medidas'
     text: 'Texto'
     data: 'Dados'
+    spider: Spider
+  curl-to-code:
+    title: Crul to Code
+    description: Convert curl commands to Python, JavaScript and more

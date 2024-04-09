@@ -1,3 +1,9 @@
+/*
+ * @Author: 胖胖很瘦
+ * @Date: 2024-03-01 11:36:27
+ * @LastEditors: 胖胖很瘦
+ * @LastEditTime: 2024-04-09 10:25:34
+ */
 import { resolve } from 'node:path';
 import { URL, fileURLToPath } from 'node:url';
 
@@ -15,12 +21,17 @@ import { VitePWA } from 'vite-plugin-pwa';
 import markdown from 'vite-plugin-vue-markdown';
 import svgLoader from 'vite-svg-loader';
 import { configDefaults } from 'vitest/config';
+import topLevelAwait from 'vite-plugin-top-level-await'
 
 const baseUrl = process.env.BASE_URL ?? '/';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    topLevelAwait({
+      promiseExportName: '__tla',
+      promiseImportName: i => `__tla_${i}`
+    }),
     VueI18n({
       runtimeOnly: true,
       jitCompilation: true,
@@ -101,16 +112,16 @@ export default defineConfig({
   base: baseUrl,
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
   define: {
-    'import.meta.env.PACKAGE_VERSION': JSON.stringify(process.env.npm_package_version),
+    'import.meta.env.PACKAGE_VERSION': JSON.stringify(process.env.npm_package_version)
   },
   test: {
     exclude: [...configDefaults.exclude, '**/*.e2e.spec.ts'],
   },
   build: {
     target: 'esnext',
-  },
+  }
 });

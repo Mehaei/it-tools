@@ -69,6 +69,7 @@ tools:
     measurement: '测量'
     text: '文本'
     data: '数据'
+    spider: '爬虫'
 
   password-strength-analyser:
     title: 密码强度分析仪
@@ -102,6 +103,10 @@ tools:
   json-to-csv:
     title: JSON 转 CSV
     description: 使用自动标头检测将JSON转换为CSV。
+
+  curl-to-code:
+    title: curl 转 代码
+    description: 将curl命令转换为多种编程语言的代码。
 
   camera-recorder:
     title: 摄像机记录器

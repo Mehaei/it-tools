@@ -63,6 +63,7 @@ tools:
     measurement: Mesure
     text: Texte
     data: Données
+    spider: Spider
 
   token-generator:
     title: Générateur de token
@@ -79,3 +80,6 @@ tools:
     copied: Le token a été copié
     length: Longueur
     tokenPlaceholder: Le token...
+  curl-to-code:
+    title: Crul to Code
+    description: Convert curl commands to Python, JavaScript and more

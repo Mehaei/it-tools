@@ -69,6 +69,7 @@ tools:
     measurement: Measurement
     text: Text
     data: Data
+    spider: Spider
 
   password-strength-analyser:
     title: Password strength analyser
@@ -103,6 +104,10 @@ tools:
   json-to-csv:
     title: JSON to CSV
     description: Convert JSON to CSV with automatic header detection.
+  
+  curl-to-code:
+    title: Curl to Code
+    description: Convert curl commands to Python, JavaScript and more
 
   camera-recorder:
     title: Camera recorder
