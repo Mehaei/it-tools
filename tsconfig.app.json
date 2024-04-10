@@ -16,5 +16,8 @@
     "esModuleInterop": true,
     "jsx": "preserve",
     "skipLibCheck": true
+  },
+  "experiments": {
+    "topLevelAwait": true
   }
 }
